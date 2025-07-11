@@ -6,7 +6,8 @@ on:
       - main 
 jobs:
   echo:
-    runs-on: [self-hosted, linux, x64]
+    #runs-on: [self-hosted, linux, x64] #self-hosted Runner 
+    runs-on: ubuntu-latest #GitHub-hosted Runner
     steps:
       - name: Check out code  
         uses: actions/checkout@v3
